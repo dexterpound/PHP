@@ -1,1 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Constants</title>
+
+</head>
+
+<body>
+
+<?php
+
+$max_width = 900;
+
+define("MAX_WIDTH" , 980);
+echo MAX_WIDTH;
+
+?> // can't change the value
+    //MAX_WIDTH = MAX_WIDTH + 1
+    //echo MAX_WIDTH;
+
+<?php // can't even redefine it
+    define("MAX_WIDTH", 981);
+    echo MAX_WIDTH;
+    ?>
+
+</body>
+</html>
 
