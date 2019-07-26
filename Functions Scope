@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Functions Scope</title>
+
+</head>
+
+<body>
+
+
+		<?php
+		
+		$bar = "outside"; //global scope
+		
+		function foo($bar) {
+			global $bar;
+			if (isset($bar)) {
+				echo "foo: " . $bar . "<br />";
+			}
+		$bar = "inside"; //local scope
+		}
+		
+		echo "1: " . $bar . "<br />";
+		foo($bar);
+		echo "2: " . $bar . "<br />";
+		
+		
+		
+		
+		
+		?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
